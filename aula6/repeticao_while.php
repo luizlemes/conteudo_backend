@@ -9,7 +9,7 @@
 </pre>
 <?php
 $contador = 0;
-while($contador = 10){
-     echo "Olá pessoal $contador <br>";
+while($contador <= 10){
+     echo "Olá pessoal $contador<br>";
      $contador++;
 }?>
