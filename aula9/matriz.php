@@ -23,4 +23,21 @@
     $produtos = [
         $produto1,
         $produto2,
-        $produto3];
+        $produto3,
+    ];
+    /*imprimir todos os valores da matriz, utilizando
+    duas estruturas de repeitção, 1 para as linhas 
+    outra para as colunas*/
+    for($i=0; $i<=2; $i++){
+        foreach($produtos[$i] as $key => $value){
+            echo $value. "<br>";
+        }
+    }
+    //outra forma
+    foreach($produtos as $value){
+        echo "<td>" . $produto["nome"]. "<br>";
+        echo "<td>" . $produto["marca"]. "<br>";
+        echo "<td>" . $produto["preco"]. "<br>";
+    }
+    echo "</table>";
+    
