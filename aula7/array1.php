@@ -43,8 +43,7 @@ echo $variavel[2] . "<br>";
 echo $variavel[3] . "<br>";
 
 echo "<p>$nbsp;</p>";
-for($i= 0; $<count($variavel); $i++){
-
+for($i= 0; $i<count($variavel); $i++){
     echo  $variavel[$i] . "<br>";
 
     // vetor notas
