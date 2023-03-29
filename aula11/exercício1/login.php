@@ -7,3 +7,4 @@ IF (isset($_POST['usuario']){}
         echo "usuàrio não identificado";
     }
 else{ header("Location: form_login.html");}
+?>
