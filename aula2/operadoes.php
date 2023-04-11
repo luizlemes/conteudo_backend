@@ -25,9 +25,11 @@
 </table>
 <p>Exemplo</p>
 <?php 
-    echo 10 + 5;
-    echo 10 - 5;
-    echo 10 * 5;
-    echo 10 / 5;
-    echo 10 % 5;
+/*o jogador . serve para concatenar
+juntar dois textos, ou um numero e um texto*/
+    echo 10 + 5 . "<br>";
+    echo 10 - 5 . "<br>";
+    echo 10 * 5 . "<br>";
+    echo 10 / 5 . "<br>";
+    echo 10 % 5 . "<br>"; //potencia
     ?>
