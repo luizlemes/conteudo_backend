@@ -9,15 +9,17 @@
 <body>
     <h1>Cadasatro de usuario</h1>
     <hr>
-    <form action="">
+    <form action="usuario/inserir.php" method="post">
         <label for="">Nome</label><br>
-        <input type="text" name="nome" id=""><br>
+        <input type="text" name="nome" ><br>
 
         <label for="">Login</label><br>
-        <input type="text" name="login" id=""><br>
+        <input type="text" name="login" ><br>
 
         <label for="">Senha</label><br>
-        <input type="password" name="senha" id=""><br>
+        <input type="password" name="senha" ><br>
+
+        <button type="submit">Cadastrar</button>
     </form>
 </body>
 </html>
