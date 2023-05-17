@@ -17,7 +17,7 @@
    //executa o comando
    $comando->execute();
 
-   //volta para a listagem
+   //volta para a listagem de usuários
    header("Location: ../usuarios.php");
 
    

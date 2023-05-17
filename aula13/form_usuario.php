@@ -1,7 +1,7 @@
 <?php
     require_once "usuario/consultar_por_id.php";
 ?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,18 +13,21 @@
     <h1>Cadastro de usuário</h1>
     <hr>
 
-    <form action="<?php echo isset($usuario) ?  "usuario/atualizar.php" : "usuario/inserir.php";?>" method="post">
-    
-        <input type="hidden" name="idusuario"  value="<?php echo $usuario->idusuario ?? "";?>"><br>
+    <form action="<?php echo isset($usuario) ? "usuario/atualizar.php" : "usuario/inserir.php";?>" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" name="idusuario" value="<?php echo $usuario->idusuario ?? "" ;?>"><br>
 
         <label>Nome</label><br>
-        <input type="text" name="nome"  value="<?php echo $usuario->nome ?? "";?>"><br>
+        <input type="text" name="nome" value="<?php echo $usuario->nome ?? "" ;?>"><br>
 
         <label>Login</label><br>
-        <input type="text" name="login" value="<?php echo $usuario->login ?? "";?>"><br>
+        <input type="text" name="login" value="<?php echo $usuario->login ?? "" ;?>"><br>
 
         <label>Senha</label><br>
-        <input type="password" name="senha" value="<?php echo $usuario->senha ?? "";?>"><br>
+        <input type="password" name="senha" value="<?php echo $usuario->senha ?? "" ;?>"><br>
+
+        <label>Foto</label><br>
+        <input type="file" name="foto"><br><br>
 
         <button type="submit">Inserir</button>
         

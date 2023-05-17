@@ -3,8 +3,9 @@
    //importa o arquivo de conexão
    require_once "conexao.php";
 
-   //verificsa se foi enviada o parem id pela URL
+   //verifica se foi enviado o param id pela URL
    if(isset($_GET['id'])){
+
    $id = $_GET['id'];
 
    //cria uma variável com um comando SQL
@@ -19,11 +20,17 @@
    //executa o comando
    $comando->execute();
 
+   //pegar os resultados da consulta - todas as linhas de resultado
    $resultados = $comando->get_result();
-   $usuario = $resultados->fetch_object();
-  
 
+   //pega a primeira linha de resultado da consulta
+   $usuario = $resultados->fetch_object();
+
+   //imprimir o resultado
+   //var_dump($usuario);
+   
 }
+   
 
 
 
