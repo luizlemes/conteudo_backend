@@ -13,6 +13,6 @@ $destino = "../uploads/$nome_foto";
 //move o arquivo de upload para a pasta destino
 move_uploaded_file($origem, $destino);
 }else{
-    $nome_foto= " sem_foto'.png'";
+    $nome_foto = "sem_foto.png";
 }
 

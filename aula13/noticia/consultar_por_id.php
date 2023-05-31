@@ -27,7 +27,7 @@
    $noticia = $resultados->fetch_object();
 
    //imprimir o resultado
-   //var_dump($noticia);
+   //var_dump($usuario);
    
 }
    

@@ -3,7 +3,7 @@
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 
-   $id = $_POST['idnoticia'];
+   $idnoticia = $_POST['idnoticia'];
    $titulo = $_POST['titulo'];
    $materia = $_POST['materia'];
    $categoria = $_POST['categoria'];

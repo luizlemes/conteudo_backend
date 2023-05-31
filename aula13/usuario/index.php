@@ -1,9 +1,11 @@
-<?php  require "consultar_todos.php"; require_once "../template/cabecalho.php"; ?>
+<?php require "consultar_todos.php"; 
+      require_once "../template/cabecalho.php";
+      ?>
 
     <div class="container">
     <h1>Usuários</h1> 
     <hr>
-    <div class="text-end">
+  <div class="text-end">
     <a href="formulario.php" class="btn btn-success">
         Inserir novo
     </a>
@@ -23,7 +25,7 @@
             <td><?= $usuario -> nome ?></td>
             <td><?= $usuario -> login ?></td>
             <td><img src="../uploads/<?= $usuario->foto ?>" height="30px"></td>
-            <td class="text-end" width="25%">
+            <td class="text_end" width="25%">
               <a href="excluir.php?id=<?= $usuario -> idusuario ?>" class="btn btn-danger"> 
                 <i class="fa-solid fa-trash-can"></i> 
                 Excluir
@@ -41,4 +43,5 @@
     </table>
 
     </div>
-    <?php  require_once "../template/rodape.php"; ?>
+
+<?php require_once "../template/rodape.php";?>
