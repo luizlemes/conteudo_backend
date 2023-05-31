@@ -9,19 +9,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-      <?php foreach($categorias as $noticia): ?>
+       
+      <li class="nav-item">
+          <a class="nav-link" href="../site/index.php">
+          Site</a>
+        </li> 
+
         <li class="nav-item">
-          <a class="nav-link" href="index.php?assunto=<?php echo $noticia->categoria; ?>">
-          <?php echo $noticia->categoria; ?></a>
+          <a class="nav-link" href="../noticia/index.php">
+          Noticia</a>
         </li>
 
-      <?php endforeach; ?>
-
-      <li class="nav-item">
-          <a class="nav-link" 
-          href="../noticia/index.php">
-          Acesso Restrito</a>
+        <li class="nav-item">
+          <a class="nav-link" href="../usuario/index.php">
+          Usuarios</a>
         </li>
         
       </ul>
